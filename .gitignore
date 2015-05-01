@@ -17,6 +17,7 @@
 !/log/.keep
 /tmp
 .env
+.awskey
 =======
 *.rbc
 capybara-*.html
