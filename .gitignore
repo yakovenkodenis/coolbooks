@@ -16,6 +16,7 @@
 /log/*
 !/log/.keep
 /tmp
+.env
 =======
 *.rbc
 capybara-*.html
