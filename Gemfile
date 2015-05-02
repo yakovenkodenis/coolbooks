@@ -3,8 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -55,8 +54,6 @@ gem 'cancan'
 
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
-gem 'dotenv-rails', groups: :development
-
 gem 'aws-sdk', '<2.0'
 
 gem 'friendly_id'
@@ -64,3 +61,19 @@ gem 'friendly_id'
 gem 'stripe'
 
 gem 'aasm'
+
+# === DEVELOPMENT GEMS === #
+
+group :development do
+	gem 'spring'
+	gem 'sqlite3'
+	gem 'dotenv-rails'
+end
+
+
+# === PRODUCTION GEMS === #
+
+group :production do
+	gem 'rails_12factor'
+	gem 'pg'
+end
