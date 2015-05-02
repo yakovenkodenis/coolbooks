@@ -18,6 +18,7 @@
 /tmp
 .env
 .awskey
+.stripe
 =======
 *.rbc
 capybara-*.html
