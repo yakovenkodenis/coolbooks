@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'lab3' => 'lab3#index'
+
   resources :books
   devise_for :users
 
